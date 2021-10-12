@@ -88,15 +88,15 @@ button:hover {
     opacity: 0.85;
 }
 
-a .cancel {
-    display: block;
+.cancel {
+    display: inline-block;
     margin-bottom: 3em;
     text-decoration: none;
     color:hsl(223, 47%, 23%);
     font-weight: 700;
 }
 
-@media only screen and (max-width:420px) {
+@media only screen and (max-width:325px) {
     body {
         background-image: url('../images/pattern-background-mobile.svg');
     }
@@ -107,9 +107,15 @@ a .cancel {
     }
 }
 
-@media only screen and (max-width:1440px) and (min-width:540px) {
+@media only screen and (max-width:660px) and (min-width:330px) {
     #card-component {
-        width: 50%;
+        width: 80%;
     }
    
+}
+
+@media only screen and (max-width:1000px) and (min-width:725px){
+    #card-component {
+        width: 70%;
+    }
 }
